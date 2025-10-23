@@ -25,5 +25,23 @@ include 'header.php';
     <p class="footer-text">© 2025 Consulta de Signos - Desenvolvido por <a href="https://github.com/mviniciusca" target="_blank" class="footer-link">Marcos Coelho</a></p>
 </footer>
 
+<script>
+// Theme toggle functionality
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+body.setAttribute('data-theme', currentTheme);
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+});
+</script>
+
 </body>
 </html>
