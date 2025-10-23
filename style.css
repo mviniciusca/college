@@ -1,0 +1,279 @@
+/* Estilos personalizados para o formulário de cadastro de endereço */
+
+/* Reset e configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container principal */
+.container {
+    padding: 20px;
+}
+
+/* Card principal */
+.card {
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    background: linear-gradient(135deg, #4158d0 0%, #c850c0 100%) !important;
+    border: none;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Formulário */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    border-color: #4158d0;
+    box-shadow: 0 0 0 0.2rem rgba(65, 88, 208, 0.25);
+    background-color: #fff;
+}
+
+.form-control:read-only {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+    color: #6c757d;
+}
+
+/* Input group */
+.input-group .form-control {
+    border-right: none;
+}
+
+.input-group .btn {
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #e9ecef;
+    border-left: none;
+}
+
+.input-group .btn:hover {
+    background-color: #4158d0;
+    border-color: #4158d0;
+    color: white;
+}
+
+/* Botões */
+.btn {
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4158d0 0%, #c850c0 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #3146b8 0%, #b048a8 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(65, 88, 208, 0.3);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #0e8078 0%, #32d96a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(17, 153, 142, 0.3);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #757f9a 0%, #d7dde8 100%);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #656e85 0%, #c5cdd6 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(117, 127, 154, 0.3);
+}
+
+.btn-outline-secondary {
+    border: 2px solid #e9ecef;
+    color: #6c757d;
+    background: white;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #4158d0;
+    border-color: #4158d0;
+    color: white;
+    transform: none;
+}
+
+/* Loading spinner */
+#loading {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#loading.show {
+    opacity: 1;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Alertas customizados */
+.alert {
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #11998e20 0%, #38ef7d20 100%);
+    color: #0e8078;
+    border-left: 4px solid #11998e;
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #ff416c20 0%, #ff4b2b20 100%);
+    color: #d73027;
+    border-left: 4px solid #ff416c;
+}
+
+.alert-warning {
+    background: linear-gradient(135deg, #ffa72620 0%, #ffd54f20 100%);
+    color: #e65100;
+    border-left: 4px solid #ffa726;
+}
+
+/* Validação */
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 0.875em;
+    color: #dc3545;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Efeitos hover para inputs */
+.form-control:hover:not(:read-only) {
+    border-color: #c850c0;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.15);
+}
+
+/* Ícones */
+.fas, .far, .fab {
+    margin-right: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .card-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .row .col-md-4,
+    .row .col-md-6,
+    .row .col-md-8 {
+        margin-bottom: 15px;
+    }
+    
+    .text-end {
+        text-align: center !important;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Transições suaves para todos os elementos */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Estilo para campos obrigatórios */
+.form-label::after {
+    content: "";
+}
+
+.form-label[for="cep"]::after {
+    content: " *";
+    color: #dc3545;
+    font-weight: bold;
+}
