@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+input[type="date"]:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 32px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #333333;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.result-container {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 40px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.signo-name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.signo-symbol {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.signo-period {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.signo-description {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 2px;
+    transition: all 0.2s ease;
+}
+
+.back-link:hover {
+    opacity: 0.7;
+    transform: translateY(-1px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #000000;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+.footer-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid #000000;
+    transition: all 0.2s ease;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
+    transform: translateY(-1px);
+}
+
+.error-message {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.error-message p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .form-container,
+    .result-container {
+        padding: 30px 20px;
+    }
+    
+    .signo-name {
+        font-size: 1.8rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .signo-symbol {
+        font-size: 2.2rem;
+    }
+}

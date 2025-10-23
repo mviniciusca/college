@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<signos>
+    <signo>
+        <nome>Áries</nome>
+        <simbolo>♈</simbolo>
+        <dataInicio>21/03</dataInicio>
+        <dataFim>19/04</dataFim>
+        <descricao>Pessoas de Áries são conhecidas por sua energia, determinação e liderança natural. São corajosas, independentes e sempre prontas para novos desafios.</descricao>
+    </signo>
+    <signo>
+        <nome>Touro</nome>
+        <simbolo>♉</simbolo>
+        <dataInicio>20/04</dataInicio>
+        <dataFim>20/05</dataFim>
+        <descricao>Taurinos são práticos, determinados e valorizam a estabilidade. São conhecidos por sua paciência, lealdade e apreço pelas coisas boas da vida.</descricao>
+    </signo>
+    <signo>
+        <nome>Gêmeos</nome>
+        <simbolo>♊</simbolo>
+        <dataInicio>21/05</dataInicio>
+        <dataFim>20/06</dataFim>
+        <descricao>Geminianos são comunicativos, versáteis e curiosos. Possuem mente ágil, são adaptáveis e adoram aprender coisas novas constantemente.</descricao>
+    </signo>
+    <signo>
+        <nome>Câncer</nome>
+        <simbolo>♋</simbolo>
+        <dataInicio>21/06</dataInicio>
+        <dataFim>22/07</dataFim>
+        <descricao>Cancerianos são sensíveis, intuitivos e protetores. Valorizam muito a família e o lar, sendo conhecidos por sua empatia e cuidado com os outros.</descricao>
+    </signo>
+    <signo>
+        <nome>Leão</nome>
+        <simbolo>♌</simbolo>
+        <dataInicio>23/07</dataInicio>
+        <dataFim>22/08</dataFim>
+        <descricao>Leoninos são carismáticos, generosos e têm forte senso de liderança. São criativos, dramáticos e adoram estar no centro das atenções.</descricao>
+    </signo>
+    <signo>
+        <nome>Virgem</nome>
+        <simbolo>♍</simbolo>
+        <dataInicio>23/08</dataInicio>
+        <dataFim>22/09</dataFim>
+        <descricao>Virginianos são organizados, analíticos e perfeccionistas. São práticos, confiáveis e sempre buscam a excelência em tudo que fazem.</descricao>
+    </signo>
+    <signo>
+        <nome>Libra</nome>
+        <simbolo>♎</simbolo>
+        <dataInicio>23/09</dataInicio>
+        <dataFim>22/10</dataFim>
+        <descricao>Librianos buscam equilíbrio, harmonia e justiça. São diplomáticos, charmosos e têm grande apreço pela beleza e pelas artes.</descricao>
+    </signo>
+    <signo>
+        <nome>Escorpião</nome>
+        <simbolo>♏</simbolo>
+        <dataInicio>23/10</dataInicio>
+        <dataFim>21/11</dataFim>
+        <descricao>Escorpianos são intensos, misteriosos e determinados. Possuem grande força interior, são leais e têm capacidade de transformação constante.</descricao>
+    </signo>
+    <signo>
+        <nome>Sagitário</nome>
+        <simbolo>♐</simbolo>
+        <dataInicio>22/11</dataInicio>
+        <dataFim>21/12</dataFim>
+        <descricao>Sagitarianos são aventureiros, otimistas e amantes da liberdade. São filosóficos, sinceros e sempre em busca de novos horizontes e conhecimentos.</descricao>
+    </signo>
+    <signo>
+        <nome>Capricórnio</nome>
+        <simbolo>♑</simbolo>
+        <dataInicio>22/12</dataInicio>
+        <dataFim>19/01</dataFim>
+        <descricao>Capricornianos são ambiciosos, disciplinados e responsáveis. Trabalham duro para alcançar seus objetivos e valorizam muito a tradição e a estrutura.</descricao>
+    </signo>
+    <signo>
+        <nome>Aquário</nome>
+        <simbolo>♒</simbolo>
+        <dataInicio>20/01</dataInicio>
+        <dataFim>18/02</dataFim>
+        <descricao>Aquarianos são inovadores, independentes e humanitários. São progressistas, originais e sempre buscam formas de melhorar o mundo ao seu redor.</descricao>
+    </signo>
+    <signo>
+        <nome>Peixes</nome>
+        <simbolo>♓</simbolo>
+        <dataInicio>19/02</dataInicio>
+        <dataFim>20/03</dataFim>
+        <descricao>Piscianos são intuitivos, compassivos e criativos. São sonhadores, empáticos e possuem grande sensibilidade artística e espiritual.</descricao>
+    </signo>
+</signos>
